@@ -75,6 +75,21 @@ Example Code
 Example UI
 
 ##[SubmitForm] 	
+
+Syntax
+```
+[Form]VBSubmitForm[name]("action")
+    ?{hidden}("shopid" "value"){.form-control}
+    ?{hidden}("nextpage" "value"){.form-control}
+    
+    ?{type}("label" "value" "placeholder" rows*cols){.class}
+    .
+    ..
+    ...
+    ?{submit}("" "Send!"){.form-control}
+[/Form]VBSubmitForm
+```
+
 คำอธิบาย
 - ข้อมูลที่ต้องการจาก ผู้ใช้งาน โดยสามารถรับข้อมูลได้เฉพาะที่เว็บกำหนด
 * ชื่อ
@@ -88,6 +103,18 @@ parameter :
 - nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน)
 
 Example Code
+```
+[Form]VBSubmitForm[confirm user code]("")
+    ?{hidden}("shopid" "ragnarok"){.form-control}
+    ?{hidden}("nextpage" "gamemenu"){.form-control}
+    
+    ?{text}("UserCode" "" "" ){.form-control}
+    
+    ?{submit}("" "ขั้นตอนต่อไป"){.form-control}
+[/Form]VBSubmitForm
+```
+
+
 
 Example UI
 
