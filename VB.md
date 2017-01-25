@@ -1,4 +1,4 @@
-#MarkDown Commands
+![](/assets/AutoFill.png)#MarkDown Commands
 ---
 
 ##[Consent]
@@ -174,8 +174,7 @@ Example Code
 
 Example UI
 
-![](/assets/af.jpg)
-
+![](/assets/AutoFill.jpg)
 
  
 
