@@ -84,7 +84,7 @@ Example Code
 
 Example UI
 
-##[CallService]  	servicename
+##[CallService] 
 คำอธิบาย
 - เรียก service
 
@@ -95,7 +95,7 @@ Example Code
 
 Example UI
 
-##[CallPage] 	pagename
+##[CallPage] 
 คำอธิบาย
 - เปลี่ยนหน้า
 
