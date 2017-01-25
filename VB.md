@@ -93,7 +93,7 @@ Example UI
 
 ##[CallService] 
 
-Syntex
+Syntax
 ```
 VBCallService[name]("servicename")
 ```

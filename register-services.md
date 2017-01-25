@@ -19,3 +19,5 @@
 |------|--------|-----|
 |checkoutrestaurant |ยืนยันการสั่งอาหาร (ดึงข้อมูลการสั่งจากบริษัทก่อน)| |http://www.mj.com/api/customer/table/{userid}|
 |waitingcheckout     |รอการยืนยันสั่งอาหาร        |###Please wait  system in process \![]\(loading.gif\)     ||
+
+##Service
