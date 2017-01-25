@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [MarkDown APIs](VB.md)
+* [MarkDown Commands](VB.md)
 * [Register services](register-services.md)
 
