@@ -1,4 +1,4 @@
-![](/assets/AutoFill.png)#MarkDown Commands
+#MarkDown Commands
 ---
 
 ##[Consent]
