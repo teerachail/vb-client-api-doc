@@ -1,13 +1,14 @@
 ##  Consent
-> GET     api/consent/{shopid}/{action}/{pagename}
-    ใช้เมื่อต้องการให้ user ยินยอมข้อตกลงที่ต้องการ
-    [action]
-        transfer
-        restaurent
+> GET   api/consent/{shopid}/{action}/{pagename}
+        ใช้เมื่อต้องการให้ user ยินยอมข้อตกลงที่ต้องการ
+
+        [action]        กำหนดการทำงานของข้อตกลง
+            - transfer    สำหรับการโอนจ่ายเงิน
+            - restaurant  สำหรับยืนยันการเช็คอินโต๊ะของร้านอาหาร
 
 ## Shopping 
 
-POST    api/AddItems/
+POST    api/AddItems/   
 POST    api/EditItem/
          api/RemoveItem/{shopid}/{itemid}/{pagename}
 
