@@ -20,7 +20,7 @@ parameter	:
 
 Example Code
 ```
-VBConsent[ยืนยันจ่ายเงิน]("restaurant" "mk" "mklandpage")
+VBConsent[ยืนยันจ่ายเงิน]("checkoutrestaurant" "mk" "mklandpage")
 ```
 
 Example UI
