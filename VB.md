@@ -2,6 +2,13 @@
 ---
 
 ##[Consent]
+
+Syntex
+    
+```
+VBConsent[name]("action" "shopid" "nextpage")
+```
+
 คำอธิบาย
 - ยืนยันการทำรายการ
 
@@ -10,8 +17,13 @@ parameter	:
 - action action ที่ต้องการยืนยัน เช่น ยืนยันการสั่งอาหาร , ยืนยันการโอนจ่าย etc. (action ที่สามารถสั่งได้ ต้องทำการ ลงทะเบียนก่อน)
 - nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน)
 
+
 Example Code
-- [Consent]
+```
+VBConsent[ยืนยันจ่ายเงิน]("checkinrestaurant" "mk" "mklandpage")
+```
+
+
 
 Example UI
 
