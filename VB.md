@@ -153,6 +153,7 @@ Example UI
 
 ![](/assets/06_RequestAddress.png)
 
+
 ##[AutoFill] 	
 
 Syntax
@@ -174,7 +175,7 @@ Example Code
 
 Example UI
 
-![](/assets/AutoFill.jpg)
+
 
  
 
