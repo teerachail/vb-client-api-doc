@@ -154,33 +154,6 @@ Example UI
 ![](/assets/06_RequestAddress.png)
 
 
-##[AutoFill] 	
-
-Syntax
-```
-
-```
-
-คำอธิบาย
-
-
-parameter :
-
-Example Code
-```
-
-```
-
-
-
-Example UI
-
-
-
- 
-
-
-
 ##[CallService] 
 
 Syntax
