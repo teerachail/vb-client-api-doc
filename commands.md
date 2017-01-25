@@ -55,7 +55,23 @@ MarkDown Commands
     Example Code  
     Example UI
 
-##[SubmitForm] 	
+##[SubmitForm] 
+
+Syntax
+```
+[Form]VBSubmitForm[name]("action")
+    ?{hidden}("shopid" "value"){.form-control}
+    ?{hidden}("nextpage" "value"){.form-control}
+    
+    ?{type}("label" "value" "placeholder" rows*cols){.class}
+    .
+    ..
+    ...
+    ?{submit}("" "Send!"){.form-control}
+[/Form]VBSubmitForm
+```
+
+	
     คำอธิบาย
      - ข้อมูลที่ต้องการจาก ผู้ใช้งาน โดยสามารถรับข้อมูลได้เฉพาะที่เว็บกำหนด
       * ชื่อ
