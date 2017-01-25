@@ -6,7 +6,7 @@
 Syntex
     
 ```
-VBConsent[name]("action" "shopid" "nextpage")
+$[VBConsent]("name" "action" "shopid" "nextpage")
 ```
 
 คำอธิบาย
