@@ -54,6 +54,8 @@ $[AddItem]("เพิ่มสินค้า": "individual" "nmd01bls30" "adida
 
 Example UI
 
+![](/assets/0304_GoToCheckoutAddProduct.png)
+
 ##[EditItemDetail]   
 
 Syntax
@@ -79,6 +81,8 @@ $[EditItem]("แก้ไข": "adidas" "nmd01bls30" "nmd01whs30" "")
 
 Example UI
 
+![](/assets/05_EditProduct.png)
+
 ##[GoToCheckOut] 	
 
 Syntax
@@ -101,7 +105,7 @@ $[GotoCheckOut]("เปิดตะกร้า")
 
 Example UI
 
-
+![](/assets/_GoToCheckoutt.png)
 
 ##[SubmitForm] 	
 
@@ -146,6 +150,8 @@ $[/SubmitForm]
 
 
 Example UI
+
+![](/assets/06_RequestAddress.png)
 
 ##[CallService] 
 
