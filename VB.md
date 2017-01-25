@@ -74,26 +74,6 @@ Example Code
 
 Example UI
 
-##[RemoveItem]	
-
-Syntex
-    
-```
-VBRemoveItem[name]("shopid","itemid","nextpage")
-```
-
-คำอธิบาย
-- ลบสินค้า
-
-parameter :
-- shopid รหัสร้านค้า
-- itemid รหัสร้านค้าที่ต้องการลบ
-- nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน)
-
-Example Code
-
-Example UI
-
 ##[SubmitForm] 	
 คำอธิบาย
 - ข้อมูลที่ต้องการจาก ผู้ใช้งาน โดยสามารถรับข้อมูลได้เฉพาะที่เว็บกำหนด
