@@ -28,6 +28,7 @@ Example UI
 ##[EditItemDetail]   
 คำอธิบาย
 - แก้ไขรายละเอียดสินค้า
+
 parameter :
 - shopid รหัสร้านค้า
 - oldid รหัสสินค้าที่ต้องการแก้ไข
@@ -48,6 +49,7 @@ Example UI
 ##[RemoveItem]	
 คำอธิบาย
 - ลบสินค้า
+
 parameter :
 - shopid รหัสร้านค้า
 - itemid รหัสร้านค้าที่ต้องการลบ
@@ -62,6 +64,7 @@ Example UI
 * ชื่อ
 * ที่อยู่
 * เบอโทรศัพท์
+
 parameter :
 - shopid รหัสร้านค้า
 - InputsFroms
@@ -74,6 +77,7 @@ Example UI
 ##[CallService]  	servicename
 คำอธิบาย
 - เรียก service
+
 parameter :
 - servicename ชื่อ service ที่ต้องการเรียก (service ที่ใช้ต้องทำการลงทะเบียนก่อน)
 
@@ -83,6 +87,7 @@ Example UI
 ##[CallPage] 	pagename
 คำอธิบาย
 - เปลี่ยนหน้า
+
 parameter :
 - pagename หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน)
 
