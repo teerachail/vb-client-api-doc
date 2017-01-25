@@ -15,7 +15,7 @@ $[Consent]("title": "action" "shopid" "nextpage")
 parameter	:
 - shopid รหัสร้านค้า
 - action แอคชั่นที่ต้องการยืนยัน เช่น ยืนยันการสั่งอาหาร , ยืนยันการโอนจ่าย etc. (action ที่สามารถสั่งได้ ต้องทำการ ลงทะเบียนก่อน)
-- nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน #ไม่ใส่หากหน้าต่อไปต้องการกลับไประบบ VB)
+- nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน #ไม่ใส่หากหน้าต่อไปต้องการกลับไประบบ)
 
 
 Example Code
@@ -101,6 +101,8 @@ $[GotoCheckOut]("เปิดตะกร้า")
 
 Example UI
 
+
+
 ##[SubmitForm] 	
 
 Syntax
@@ -165,6 +167,8 @@ $[CallService]("CallWaiter": "mjsuki" "callwaiterservice")
 
 Example UI
 
+![](/assets/01_CallStaff.png)
+
 ##[CallPage] 
 
 Syntax
@@ -185,3 +189,5 @@ Example Code
 ```
 
 Example UI
+
+![](/assets/02_ChangePage.png)
