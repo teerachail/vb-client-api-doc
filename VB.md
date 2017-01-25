@@ -23,9 +23,9 @@ Example Code
 VBConsent[ยืนยันจ่ายเงิน]("checkinrestaurant" "mk" "mklandpage")
 ```
 
-
-
 Example UI
+
+![](/assets/consent.jpg)
 
 ##[AddItems]
 คำอธิบาย
@@ -57,6 +57,14 @@ Example Code
 Example UI
 
 ##[GoToCheckOut(action="checkout")] 	
+
+Syntex
+    
+```
+VBGotoCheckOut[name]()
+```
+
+
 คำอธิบาย
 - เปลี่ยนไปหน้าตะกร้าสินค้า
 
@@ -67,6 +75,13 @@ Example Code
 Example UI
 
 ##[RemoveItem]	
+
+Syntex
+    
+```
+VBRemoveItem[name]("shopid","itemid","nextpage")
+```
+
 คำอธิบาย
 - ลบสินค้า
 
@@ -97,6 +112,11 @@ Example Code
 Example UI
 
 ##[CallService] 
+
+Syntex
+```
+VBCallService[name]("servicename")
+```
 คำอธิบาย
 - เรียก service
 
@@ -108,6 +128,12 @@ Example Code
 Example UI
 
 ##[CallPage] 
+
+Syntex
+```
+VBCallPage[name]("pagename")
+```
+
 คำอธิบาย
 - เปลี่ยนหน้า
 
