@@ -12,6 +12,7 @@ parameter	:
 
 Example Code
 - [Consent]
+
 Example UI
 
 ##[AddItems]
@@ -23,8 +24,10 @@ parameter :
 - Item รายละเอียดสินค้า
 - action example : individual (เพิ่มสินค้าลงตะกร้าทันที) , bypass ( ยังไม่เพิ่มทันที 3rd party จะ เพิ่มสินค้าลงตะกร้าเองภายหลัง)
 - nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน)
+
 Example Code
 - [AddItems(action="checkout")]
+
 Example UI
 
 ##[EditItemDetail]   
@@ -38,14 +41,17 @@ parameter :
 - nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน)
 
 Example Code
+
 Example UI
 
 ##[GoToCheckOut(action="checkout")] 	
 คำอธิบาย
 - เปลี่ยนไปหน้าตะกร้าสินค้า
+
 no parameter
 
 Example Code
+
 Example UI
 
 ##[RemoveItem]	
@@ -58,6 +64,7 @@ parameter :
 - nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน)
 
 Example Code
+
 Example UI
 
 ##[SubmitForm] 	
@@ -74,6 +81,7 @@ parameter :
 - nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน)
 
 Example Code
+
 Example UI
 
 ##[CallService]  	servicename
@@ -84,6 +92,7 @@ parameter :
 - servicename ชื่อ service ที่ต้องการเรียก (service ที่ใช้ต้องทำการลงทะเบียนก่อน)
 
 Example Code
+
 Example UI
 
 ##[CallPage] 	pagename
