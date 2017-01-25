@@ -6,7 +6,7 @@
 Syntax
     
 ```
-$[Consent]("title": "action" "shopid" "nextpage")
+$[Consent]("title" "action" "shopid" "nextpage")
 ```
 
 คำอธิบาย
@@ -20,7 +20,7 @@ parameter	:
 
 Example Code
 ```
-$[Consent]("ยืนยัน": "checkoutrestaurant" "mk" "")
+$[Consent]("ยืนยัน" "checkoutrestaurant" "mk" "")
 ```
 
 Example UI
@@ -32,7 +32,7 @@ Example UI
 Syntax
     
 ```
-$[AddItem]("title": "action" "productid" "shopid" "nextpage")
+$[AddItem]("title" "action" "productid" "shopid" "nextpage")
 ```
 
 
@@ -49,7 +49,7 @@ parameter :
 
 Example Code
 ```
-$[AddItem]("เพิ่มสินค้า": "individual" "nmd01bls30" "adidas" "")
+$[AddItem]("เพิ่มสินค้า" "individual" "nmd01bls30" "adidas" "")
 ```
 
 Example UI
@@ -61,7 +61,7 @@ Example UI
 Syntax
     
 ```
-$[EditItem]("title": "shopid" "oldproductid" "newproductid" "nextpage")
+$[EditItem]("title" "shopid" "oldproductid" "newproductid" "nextpage")
 ```
 
 คำอธิบาย
@@ -76,7 +76,7 @@ parameter :
 Example Code
 
 ```
-$[EditItem]("แก้ไข": "adidas" "nmd01bls30" "nmd01whs30" "")
+$[EditItem]("แก้ไข" "adidas" "nmd01bls30" "nmd01whs30" "")
 ```
 
 Example UI
@@ -111,8 +111,7 @@ Example UI
 
 Syntax
 ```
-$[SubmitForm]("title": "action")
-    ?{shopid}("shopid" "value"){.form-control}
+$[SubmitForm]("title" "action")
     ?{nextpage}("nextpage" "value"){.form-control}
     
     ?{type}("label" "value" "placeholder" rows*cols){.class}
@@ -130,18 +129,16 @@ $[SubmitForm]("title": "action")
 * เบอโทรศัพท์
 
 parameter :
-- shopid รหัสร้านค้า
 - InputsFroms ข้อมูลต่างๆที่ต้องการจาก user
 - action
 - nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน #ไม่ใส่หากหน้าต่อไปต้องการกลับไประบบ VB)
 
 Example Code
 ```
-$[SubmitForm]("topupgame": "")
-    ?{shopid}("shopid" "ragnarok"){.form-control}
+$[SubmitForm]("topupgame" "")
     ?{nextpage}("nextpage" "gamemenu"){.form-control}
     
-    ?{text}("UserCode" "" "" ){.form-control}
+    ?{UserCode}("UserCode" "" "" ){.form-control}
     
     ?{submit}("" "ขั้นตอนต่อไป"){.form-control}
 $[/SubmitForm]
@@ -158,7 +155,7 @@ Example UI
 
 Syntax
 ```
-$[CallService]("title": "shopid" "servicename")
+$[CallService]("title" "shopid" "servicename")
 ```
 คำอธิบาย
 - เรียก service
@@ -169,7 +166,7 @@ parameter :
 
 Example Code
 ```
-$[CallService]("เรียกพนักงาน": "mjsuki" "callwaiterservice")
+$[CallService]("เรียกพนักงาน" "mjsuki" "callwaiterservice")
 ```
 
 Example UI
@@ -180,7 +177,7 @@ Example UI
 
 Syntax
 ```
-&[CallPage]("title": "shopid" "pagename")
+&[CallPage]("title" "shopid" "pagename")
 ```
 
 คำอธิบาย
@@ -192,7 +189,7 @@ parameter :
 
 Example Code
 ```
-&[CallPage]("homemenu": "niki" "landpage")
+&[CallPage]("homemenu" "niki" "landpage")
 ```
 
 Example UI
