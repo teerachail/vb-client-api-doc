@@ -3,10 +3,10 @@
 
 ##[Consent]
 
-Syntex
+Syntax
     
 ```
-$[VBConsent]("name" "action" "shopid" "nextpage")
+$[Consent]("title": "action" "shopid" "nextpage")
 ```
 
 คำอธิบาย
@@ -15,12 +15,12 @@ $[VBConsent]("name" "action" "shopid" "nextpage")
 parameter	:
 - shopid รหัสร้านค้า
 - action แอคชั่นที่ต้องการยืนยัน เช่น ยืนยันการสั่งอาหาร , ยืนยันการโอนจ่าย etc. (action ที่สามารถสั่งได้ ต้องทำการ ลงทะเบียนก่อน)
-- nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน)
+- nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน #ไม่ใส่หากหน้าต่อไปต้องการกลับไประบบ VB)
 
 
 Example Code
 ```
-VBConsent[ยืนยันจ่ายเงิน]("checkoutrestaurant" "mk" "mklandpage")
+$[Consent]("ยืนยัน": "checkoutrestaurant" "mk" "")
 ```
 
 Example UI
@@ -28,49 +28,76 @@ Example UI
 ![](/assets/consent.jpg)
 
 ##[AddItems]
+
+Syntax
+    
+```
+$[AddItem]("title": "action" "productid" "shopid" "nextpage")
+```
+
+
 คำอธิบาย
 - เพิ่มสินค้าลงตะกร้า
 
 parameter :
 - shopid รหัสร้านค้า
 - Item รายละเอียดสินค้า
-- action example : individual (เพิ่มสินค้าลงตะกร้าทันที) , bypass ( ยังไม่เพิ่มทันที 3rd party จะ เพิ่มสินค้าลงตะกร้าเองภายหลัง)
-- nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน)
+- action example : 
+    - individual (เพิ่มสินค้าลงตะกร้าทันที) 
+    - bypass ( ยังไม่เพิ่มทันที แต่จะส่งข้อมูลให้ 3rd party ก่อน และ 3rd party จะเพิ่มสินค้าลงตะกร้าเองภายหลัง)
+- nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน #ไม่ใส่หากหน้าต่อไปต้องการกลับไประบบ VB)
 
 Example Code
-- [AddItems(action="checkout")]
+```
+$[AddItem]("เพิ่มสินค้า": "individual" "nmd01bls30" "adidas" "")
+```
 
 Example UI
 
 ##[EditItemDetail]   
+
+Syntax
+    
+```
+$[EditItem]("title": "shopid" "oldproductid" "newproductid" "nextpage")
+```
+
 คำอธิบาย
 - แก้ไขรายละเอียดสินค้า
 
 parameter :
 - shopid รหัสร้านค้า
-- oldid รหัสสินค้าที่ต้องการแก้ไข
-- Items รายละเอียดสินค้าใหม่
-- nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน)
+- oldproductid รหัสสินค้าที่ต้องการแก้ไข
+- newproductid รายละเอียดสินค้าใหม่
+- nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน #ไม่ใส่หากหน้าต่อไปต้องการกลับไประบบ VB)
 
 Example Code
 
+```
+$[EditItem]("แก้ไข": "adidas" "nmd01bls30" "nmd01whs30" "")
+```
+
 Example UI
 
-##[GoToCheckOut(action="checkout")] 	
+##[GoToCheckOut] 	
 
-Syntex
+Syntax
     
 ```
-VBGotoCheckOut[name]()
+$[GotoCheckOut]("name")
 ```
 
 
 คำอธิบาย
-- เปลี่ยนไปหน้าตะกร้าสินค้า
+- navigate เปลี่ยนไปหน้าตะกร้าสินค้าของระบบ
 
 no parameter
 
 Example Code
+```
+$[GotoCheckOut]("เปิดตะกร้า")
+```
+
 
 Example UI
 
@@ -78,16 +105,16 @@ Example UI
 
 Syntax
 ```
-[Form]VBSubmitForm[name]("action")
-    ?{hidden}("shopid" "value"){.form-control}
-    ?{hidden}("nextpage" "value"){.form-control}
+$[SubmitForm]("title": "action")
+    ?{shopid}("shopid" "value"){.form-control}
+    ?{nextpage}("nextpage" "value"){.form-control}
     
     ?{type}("label" "value" "placeholder" rows*cols){.class}
     .
     ..
     ...
     ?{submit}("" "Send!"){.form-control}
-[/Form]VBSubmitForm
+[/SubmitForm]
 ```
 
 คำอธิบาย
@@ -98,20 +125,20 @@ Syntax
 
 parameter :
 - shopid รหัสร้านค้า
-- InputsFroms
+- InputsFroms ข้อมูลต่างๆที่ต้องการจาก user
 - action
-- nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน)
+- nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน #ไม่ใส่หากหน้าต่อไปต้องการกลับไประบบ VB)
 
 Example Code
 ```
-[Form]VBSubmitForm[confirm user code]("")
-    ?{hidden}("shopid" "ragnarok"){.form-control}
-    ?{hidden}("nextpage" "gamemenu"){.form-control}
+$[SubmitForm]("topupgame": "")
+    ?{shopid}("shopid" "ragnarok"){.form-control}
+    ?{nextpage}("nextpage" "gamemenu"){.form-control}
     
     ?{text}("UserCode" "" "" ){.form-control}
     
     ?{submit}("" "ขั้นตอนต่อไป"){.form-control}
-[/Form]VBSubmitForm
+$[/SubmitForm]
 ```
 
 
@@ -122,31 +149,39 @@ Example UI
 
 Syntax
 ```
-VBCallService[name]("servicename")
+$[CallService]("title": "shopid" "servicename")
 ```
 คำอธิบาย
 - เรียก service
 
 parameter :
+- shopid รหัสร้านค้า
 - servicename ชื่อ service ที่ต้องการเรียก (service ที่ใช้ต้องทำการลงทะเบียนก่อน)
 
 Example Code
+```
+$[CallService]("CallWaiter": "mjsuki" "callwaiterservice")
+```
 
 Example UI
 
 ##[CallPage] 
 
-Syntex
+Syntax
 ```
-VBCallPage[name]("pagename")
+&[CallPage]("title": "shopid" "pagename")
 ```
 
 คำอธิบาย
 - เปลี่ยนหน้า
 
 parameter :
+- shopid รหัสร้านค้า
 - pagename หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน)
 
 Example Code
+```
+&[CallPage]("homemenu": "niki" "landpage")
+```
 
 Example UI
