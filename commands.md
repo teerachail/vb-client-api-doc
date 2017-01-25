@@ -71,7 +71,7 @@ MarkDown Commands
     Example Code  
     Example UI
 
-##[CallService]  	servicename
+##[CallService]  	
     คำอธิบาย 
      - เรียก service
     parameter :
@@ -80,7 +80,7 @@ MarkDown Commands
     Example Code  
     Example UI
 
-##[CallPage] 	pagename
+##[CallPage] 	
     คำอธิบาย
      - เปลี่ยนหน้า
     parameter :    
