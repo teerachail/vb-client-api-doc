@@ -10,17 +10,17 @@ VBConsent[name]("action" "shopid" "nextpage")
 ```
 
 คำอธิบาย
-- ยืนยันการทำรายการ
+- ยืนยันการทำรายการของการทำงานต่างๆ
 
 parameter	:
 - shopid รหัสร้านค้า
-- action action ที่ต้องการยืนยัน เช่น ยืนยันการสั่งอาหาร , ยืนยันการโอนจ่าย etc. (action ที่สามารถสั่งได้ ต้องทำการ ลงทะเบียนก่อน)
+- action แอคชั่นที่ต้องการยืนยัน เช่น ยืนยันการสั่งอาหาร , ยืนยันการโอนจ่าย etc. (action ที่สามารถสั่งได้ ต้องทำการ ลงทะเบียนก่อน)
 - nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน)
 
 
 Example Code
 ```
-VBConsent[ยืนยันจ่ายเงิน]("checkinrestaurant" "mk" "mklandpage")
+VBConsent[ยืนยันจ่ายเงิน]("restaurant" "mk" "mklandpage")
 ```
 
 Example UI
