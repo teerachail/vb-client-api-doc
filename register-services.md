@@ -15,9 +15,12 @@
 - สามารถกำหนด md เริ่มต้นได้
 - หากหน้า page จำเป็นต้องมีการประมวลผลข้อมูลก่อนแสดง สามารถส่งไปให้ api ของ 3rd party ประมวลผลก่อน แล้วส่ง md กลับมาให้ระบบ VB แสดงผล
 
-| name |description|md | api |
+| name |description| api |
 |------|--------|-----|
-|checkoutrestaurant |ยืนยันการสั่งอาหาร (ดึงข้อมูลการสั่งจากบริษัทก่อน)| |http://www.mj.com/api/customer/table/{userid}|
+|checkoutrestaurant |ยืนยันการสั่งอาหาร (ดึงข้อมูลการสั่งจากบริษัทก่อน)|http://www.mj.com/api/customer/table/{userid}|
 |waitingcheckout     |รอการยืนยันสั่งอาหาร        |###Please wait  system in process \![]\(loading.gif\)     ||
 
+| name |description|md |
+|------|--------|-----|
+|waitingcheckout     |รอการยืนยันสั่งอาหาร        |###Please wait  system in process \![]\(loading.gif\)     ||
 ##Service
