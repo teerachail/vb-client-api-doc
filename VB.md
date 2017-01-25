@@ -168,7 +168,7 @@ parameter :
 
 Example Code
 ```
-$[CallService]("CallWaiter": "mjsuki" "callwaiterservice")
+$[CallService]("เรียกพนักงาน": "mjsuki" "callwaiterservice")
 ```
 
 Example UI
