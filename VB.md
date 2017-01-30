@@ -1,24 +1,27 @@
-#MarkDown Commands
+# MarkDown Commands
+
 ---
 
-##[Consent]
+## \[Consent\]
 
 Syntax
-    
+
 ```
 $[Consent]("title" "action" "shopid" "nextpage")
 ```
 
 คำอธิบาย
-- ยืนยันการทำรายการของการทำงานต่างๆ
 
-parameter	:
-- shopid รหัสร้านค้า
-- action แอคชั่นที่ต้องการยืนยัน เช่น ยืนยันการสั่งอาหาร , ยืนยันการโอนจ่าย etc. (action ที่สามารถสั่งได้ ต้องทำการ ลงทะเบียนก่อน)
-- nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน #ไม่ใส่หากหน้าต่อไปต้องการกลับไประบบ)
+* ยืนยันการทำรายการของการทำงานต่างๆ
 
+parameter    :
+
+* shopid รหัสร้านค้า
+* action แอคชั่นที่ต้องการยืนยัน เช่น ยืนยันการสั่งอาหาร , ยืนยันการโอนจ่าย etc. \(action ที่สามารถสั่งได้ ต้องทำการ ลงทะเบียนก่อน\)
+* nextpage หน้าถัดไปที่ต้องการไปต่อ \(page ที่ใช้ต้องทำการลงทะเบียนก่อน \#ไม่ใส่หากหน้าต่อไปต้องการกลับไประบบ\)
 
 Example Code
+
 ```
 $[Consent]("ยืนยัน" "checkoutrestaurant" "mk" "")
 ```
@@ -27,27 +30,29 @@ Example UI
 
 ![](/assets/consent.jpg)
 
-##[AddItems]
+## \[AddItems\]
 
 Syntax
-    
+
 ```
 $[AddItem]("title" "action" "productid" "shopid" "nextpage")
 ```
 
-
 คำอธิบาย
-- เพิ่มสินค้าลงตะกร้า
+
+* เพิ่มสินค้าลงตะกร้า
 
 parameter :
-- shopid รหัสร้านค้า
-- Item รายละเอียดสินค้า
-- action example : 
-    - individual (เพิ่มสินค้าลงตะกร้าทันที) 
-    - bypass ( ยังไม่เพิ่มทันที แต่จะส่งข้อมูลให้ 3rd party ก่อน และ 3rd party จะเพิ่มสินค้าลงตะกร้าเองภายหลัง)
-- nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน #ไม่ใส่หากหน้าต่อไปต้องการกลับไประบบ VB)
+
+* shopid รหัสร้านค้า
+* Item รายละเอียดสินค้า
+* action example : 
+  * individual \(เพิ่มสินค้าลงตะกร้าทันที\) 
+  * bypass \( ยังไม่เพิ่มทันที แต่จะส่งข้อมูลให้ 3rd party ก่อน และ 3rd party จะเพิ่มสินค้าลงตะกร้าเองภายหลัง\)
+* nextpage หน้าถัดไปที่ต้องการไปต่อ \(page ที่ใช้ต้องทำการลงทะเบียนก่อน \#ไม่ใส่หากหน้าต่อไปต้องการกลับไประบบ VB\)
 
 Example Code
+
 ```
 $[AddItem]("เพิ่มสินค้า" "individual" "nmd01bls30" "adidas" "")
 ```
@@ -56,22 +61,24 @@ Example UI
 
 ![](/assets/0304_GoToCheckoutAddProduct.png)
 
-##[EditItemDetail]   
+## \[EditItemDetail\]
 
 Syntax
-    
+
 ```
 $[EditItem]("title" "shopid" "oldproductid" "newproductid" "nextpage")
 ```
 
 คำอธิบาย
-- แก้ไขรายละเอียดสินค้า
+
+* แก้ไขรายละเอียดสินค้า
 
 parameter :
-- shopid รหัสร้านค้า
-- oldproductid รหัสสินค้าที่ต้องการแก้ไข
-- newproductid รายละเอียดสินค้าใหม่
-- nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน #ไม่ใส่หากหน้าต่อไปต้องการกลับไประบบ VB)
+
+* shopid รหัสร้านค้า
+* oldproductid รหัสสินค้าที่ต้องการแก้ไข
+* newproductid รายละเอียดสินค้าใหม่
+* nextpage หน้าถัดไปที่ต้องการไปต่อ \(page ที่ใช้ต้องทำการลงทะเบียนก่อน \#ไม่ใส่หากหน้าต่อไปต้องการกลับไประบบ VB\)
 
 Example Code
 
@@ -83,37 +90,38 @@ Example UI
 
 ![](/assets/05_EditProduct.png)
 
-##[GoToCheckOut] 	
+## \[GoToCheckOut\]
 
 Syntax
-    
+
 ```
 $[GotoCheckOut]("name")
 ```
 
-
 คำอธิบาย
-- navigate เปลี่ยนไปหน้าตะกร้าสินค้าของระบบ
+
+* navigate เปลี่ยนไปหน้าตะกร้าสินค้าของระบบ
 
 no parameter
 
 Example Code
+
 ```
 $[GotoCheckOut]("เปิดตะกร้า")
 ```
-
 
 Example UI
 
 ![](/assets/_GoToCheckoutt.png)
 
-##[SubmitForm] 	
+## \[SubmitForm\]
 
 Syntax
+
 ```
 $[SubmitForm]("title" "action")
     ?{nextpage}("nextpage" "value"){.form-control}
-    
+
     ?{type}("label" "value" "placeholder" rows*cols){.class}
     .
     ..
@@ -123,48 +131,53 @@ $[SubmitForm]("title" "action")
 ```
 
 คำอธิบาย
-- ข้อมูลที่ต้องการจาก ผู้ใช้งาน โดยสามารถรับข้อมูลได้เฉพาะที่เว็บกำหนด
+
+* ข้อมูลที่ต้องการจาก ผู้ใช้งาน โดยสามารถรับข้อมูลได้เฉพาะที่เว็บกำหนด
 * ชื่อ
 * ที่อยู่
 * เบอโทรศัพท์
 
 parameter :
-- InputsFroms ข้อมูลต่างๆที่ต้องการจาก user
-- action
-- nextpage หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน #ไม่ใส่หากหน้าต่อไปต้องการกลับไประบบ VB)
+
+* InputsFroms ข้อมูลต่างๆที่ต้องการจาก user
+* action
+* nextpage หน้าถัดไปที่ต้องการไปต่อ \(page ที่ใช้ต้องทำการลงทะเบียนก่อน \#ไม่ใส่หากหน้าต่อไปต้องการกลับไประบบ VB\)
 
 Example Code
+
 ```
 $[SubmitForm]("topupgame" "")
     ?{nextpage}("nextpage" "gamemenu"){.form-control}
-    
+
     ?{UserCode}("UserCode" "" "" ){.form-control}
-    
+
     ?{submit}("" "ขั้นตอนต่อไป"){.form-control}
 $[/SubmitForm]
 ```
-
-
 
 Example UI
 
 ![](/assets/Topup.jpg)
 
-
-##[CallService] 
+## \[CallService\]
 
 Syntax
+
 ```
 $[CallService]("title" "shopid" "servicename")
 ```
+
 คำอธิบาย
-- เรียก service
+
+* เรียก service
 
 parameter :
-- shopid รหัสร้านค้า
-- servicename ชื่อ service ที่ต้องการเรียก (service ที่ใช้ต้องทำการลงทะเบียนก่อน)
+
+* shopid รหัสร้านค้า
+* servicename ชื่อ service ที่ต้องการเรียก \(service ที่ใช้ต้องทำการลงทะเบียนก่อน\)
 
 Example Code
+
 ```
 $[CallService]("เรียกพนักงาน" "mjsuki" "callwaiterservice")
 ```
@@ -173,25 +186,30 @@ Example UI
 
 ![](/assets/01_CallStaff.png)
 
-##[CallPage] 
+## \[CallPage\]
 
 Syntax
+
 ```
-&[CallPage]("title" "shopid" "pagename")
+$[CallPage]("title" "shopid" "pagename")
 ```
 
 คำอธิบาย
-- เปลี่ยนหน้า
+
+* เปลี่ยนหน้า
 
 parameter :
-- shopid รหัสร้านค้า
-- pagename หน้าถัดไปที่ต้องการไปต่อ (page ที่ใช้ต้องทำการลงทะเบียนก่อน)
+
+* shopid รหัสร้านค้า
+* pagename หน้าถัดไปที่ต้องการไปต่อ \(page ที่ใช้ต้องทำการลงทะเบียนก่อน\)
 
 Example Code
+
 ```
-&[CallPage]("homemenu" "niki" "landpage")
+$[CallPage]("homemenu" "niki" "landpage")
 ```
 
 Example UI
 
 ![](/assets/02_ChangePage.png)
+
